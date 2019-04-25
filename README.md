@@ -1,4 +1,5 @@
-#构建Dockerfile
+# 构建Dockerfile
+## 构建前端运行环境基础镜像（nginx+nodejs）
 ```
 #依赖docker官方nginx镜像，系统为debian
 FROM nginx
@@ -32,5 +33,5 @@ RUN cd /usr/local/node-v10.15.3 \
     && ln -s /opt/nodejs10.15.3/bin/npm /usr/bin/npm \
     && node -v
 ```
-#问题
+# 问题
 镜像目前比较大，后期考虑优化，目前做demo用
