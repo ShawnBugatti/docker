@@ -47,7 +47,7 @@ RUN ln -sf \
 RUN mkdir -p \
         /etc/supervisord.d/
 
-ADD etc/services-config/supervisor/supervisord.conf /etc/
+ADD etc/service-config/supervisor/supervisord.conf /etc/
 
 #Purge
 
