@@ -34,7 +34,7 @@ RUN rpm --rebuilddb \
 
 RUN easy_install \
         'supervisor == 3.3.1' \
-        'supervisor=stdout == 0.1.1' \
+        'supervisor-stdout == 0.1.1' \
      && mkdir -p \
         /var/log/supervisor/
 
@@ -47,7 +47,7 @@ RUN ln -sf \
 RUN mkdir -p \
         /etc/supervisord.d/
 
-ADD /etc/services-config/supervisor/supervisord.conf /etc/
+ADD etc/services-config/supervisor/supervisord.conf /etc/
 
 #Purge
 
